@@ -11,6 +11,10 @@ $(document).ready(function () {
             time--;
             timeDiv.text(time);
         }, 1000);
+
+        if (time === 0) {
+            return;
+        }
     };
 
 
