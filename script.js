@@ -1,13 +1,8 @@
 $(document).ready(function () {
 
-    // Questions
-    var questions = {
-    };
-
+    // Timer Variables
     var timeDiv = $("#time");
     var time = 100;
-
-    $("#time").text(time);
 
 
     // Timer Function
@@ -16,9 +11,10 @@ $(document).ready(function () {
             time--;
             timeDiv.text(time);
         }, 1000);
-    }
+    };
 
 
+    // On click
     $("#startBtn").on("click", timerFunction);
 });
 
